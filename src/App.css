@@ -14,4 +14,27 @@
   height: 600px;
   overflow-y: auto;
   gap: 20px;
+  border: 3px solid white;
+}
+
+.draft-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid white;
+  width: 30%;
+}
+
+.draft-section-role {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.draft-lollike {
+  display: flex;
+}
+.champions-pannel {
+  width: 70%;
 }
