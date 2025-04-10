@@ -1,0 +1,2031 @@
+[
+  {
+    "rank": 1,
+    "champion": "Naafiri",
+    "role": "Jungle",
+    "winrate": 55.8,
+    "pickrate": 8.36,
+    "banrate": 75.5,
+    "weak_against": ["Diana", "Yorick", "Maître Yi"]
+  },
+  {
+    "rank": 2,
+    "champion": "Singed",
+    "role": "Mid",
+    "winrate": 61.82,
+    "pickrate": 0.54,
+    "banrate": 0.89,
+    "weak_against": []
+  },
+  {
+    "rank": 3,
+    "champion": "Gragas",
+    "role": "Mid",
+    "winrate": 58.99,
+    "pickrate": 0.68,
+    "banrate": 0.99,
+    "weak_against": []
+  },
+  {
+    "rank": 4,
+    "champion": "Zoe",
+    "role": "Support",
+    "winrate": 58.01,
+    "pickrate": 0.89,
+    "banrate": 2.2,
+    "weak_against": []
+  },
+  {
+    "rank": 5,
+    "champion": "Neeko",
+    "role": "Support",
+    "winrate": 55.37,
+    "pickrate": 2.66,
+    "banrate": 1.83,
+    "weak_against": []
+  },
+  {
+    "rank": 6,
+    "champion": "Lissandra",
+    "role": "Mid",
+    "winrate": 54.86,
+    "pickrate": 3.42,
+    "banrate": 1.34,
+    "weak_against": ["Ahri", "LeBlanc"]
+  },
+  {
+    "rank": 7,
+    "champion": "Fiora",
+    "role": "Top",
+    "winrate": 54.33,
+    "pickrate": 4.99,
+    "banrate": 5.15,
+    "weak_against": []
+  },
+  {
+    "rank": 8,
+    "champion": "Draven",
+    "role": "Adc",
+    "winrate": 54.05,
+    "pickrate": 3.98,
+    "banrate": 14.78,
+    "weak_against": ["Jinx"]
+  },
+  {
+    "rank": 9,
+    "champion": "Yorick",
+    "role": "Jungle",
+    "winrate": 53.35,
+    "pickrate": 3.51,
+    "banrate": 10.91,
+    "weak_against": ["Lee Sin"]
+  },
+  {
+    "rank": 10,
+    "champion": "Poppy",
+    "role": "Support",
+    "winrate": 53.28,
+    "pickrate": 3.15,
+    "banrate": 8.15,
+    "weak_against": ["Yuumi"]
+  },
+  {
+    "rank": 11,
+    "champion": "Braum",
+    "role": "Support",
+    "winrate": 53.12,
+    "pickrate": 7.65,
+    "banrate": 6.64,
+    "weak_against": ["Pyke", "Thresh", "Alistar"]
+  },
+  {
+    "rank": 12,
+    "champion": "Gwen",
+    "role": "Top",
+    "winrate": 52.96,
+    "pickrate": 5.31,
+    "banrate": 32.57,
+    "weak_against": ["Fiora", "K'Santé", "Jayce"]
+  },
+  {
+    "rank": 13,
+    "champion": "Sett",
+    "role": "Top",
+    "winrate": 52.84,
+    "pickrate": 4.76,
+    "banrate": 1.79,
+    "weak_against": ["Jayce"]
+  },
+  {
+    "rank": 14,
+    "champion": "Katarina",
+    "role": "Mid",
+    "winrate": 52.82,
+    "pickrate": 4.86,
+    "banrate": 3.34,
+    "weak_against": []
+  },
+  {
+    "rank": 15,
+    "champion": "Lucian",
+    "role": "Adc",
+    "winrate": 52.78,
+    "pickrate": 17.21,
+    "banrate": 14.03,
+    "weak_against": ["Samira", "Miss Fortune", "Draven"]
+  },
+  {
+    "rank": 16,
+    "champion": "Gangplank",
+    "role": "Top",
+    "winrate": 52.7,
+    "pickrate": 5.64,
+    "banrate": 3.32,
+    "weak_against": ["Yone"]
+  },
+  {
+    "rank": 17,
+    "champion": "Senna",
+    "role": "Support",
+    "winrate": 52.48,
+    "pickrate": 5.16,
+    "banrate": 0.82,
+    "weak_against": ["Nami"]
+  },
+  {
+    "rank": 18,
+    "champion": "Gwen",
+    "role": "Jungle",
+    "winrate": 52.45,
+    "pickrate": 5.3,
+    "banrate": 32.58,
+    "weak_against": []
+  },
+  {
+    "rank": 19,
+    "champion": "Naafiri",
+    "role": "Mid",
+    "winrate": 52.36,
+    "pickrate": 1.45,
+    "banrate": 70.57,
+    "weak_against": []
+  },
+  {
+    "rank": 20,
+    "champion": "Tristana",
+    "role": "Adc",
+    "winrate": 51.99,
+    "pickrate": 13.15,
+    "banrate": 9.6,
+    "weak_against": ["Aphelios", "Draven", "Twitch"]
+  },
+  {
+    "rank": 21,
+    "champion": "Pyke",
+    "role": "Support",
+    "winrate": 51.93,
+    "pickrate": 6.75,
+    "banrate": 26.86,
+    "weak_against": ["Rell", "Elise", "Nami"]
+  },
+  {
+    "rank": 22,
+    "champion": "Alistar",
+    "role": "Support",
+    "winrate": 51.87,
+    "pickrate": 6.18,
+    "banrate": 1.54,
+    "weak_against": ["Nami", "Nautilus", "Poppy"]
+  },
+  {
+    "rank": 23,
+    "champion": "Ahri",
+    "role": "Mid",
+    "winrate": 51.86,
+    "pickrate": 14.59,
+    "banrate": 10.15,
+    "weak_against": ["Akshan", "Taliyah", "Yasuo"]
+  },
+  {
+    "rank": 24,
+    "champion": "Rell",
+    "role": "Support",
+    "winrate": 51.51,
+    "pickrate": 6.21,
+    "banrate": 2.58,
+    "weak_against": ["Poppy", "Janna", "Nami"]
+  },
+  {
+    "rank": 25,
+    "champion": "Yorick",
+    "role": "Top",
+    "winrate": 51.29,
+    "pickrate": 5.91,
+    "banrate": 11.41,
+    "weak_against": ["Jax", "Gwen", "Gangplank"]
+  },
+  {
+    "rank": 26,
+    "champion": "Yasuo",
+    "role": "Mid",
+    "winrate": 51.2,
+    "pickrate": 7.13,
+    "banrate": 16.34,
+    "weak_against": ["Orianna", "LeBlanc", "Katarina"]
+  },
+  {
+    "rank": 27,
+    "champion": "Nami",
+    "role": "Support",
+    "winrate": 51.19,
+    "pickrate": 10.32,
+    "banrate": 0.98,
+    "weak_against": ["Zyra", "Zilean", "Braum"]
+  },
+  {
+    "rank": 28,
+    "champion": "Thresh",
+    "role": "Support",
+    "winrate": 51.14,
+    "pickrate": 13.37,
+    "banrate": 6.1,
+    "weak_against": ["Neeko", "Elise", "Rell"]
+  },
+  {
+    "rank": 29,
+    "champion": "Yuumi",
+    "role": "Support",
+    "winrate": 50.62,
+    "pickrate": 8.75,
+    "banrate": 19.93,
+    "weak_against": ["Leona", "Milio", "Rell"]
+  },
+  {
+    "rank": 30,
+    "champion": "Jayce",
+    "role": "Top",
+    "winrate": 50.58,
+    "pickrate": 9.29,
+    "banrate": 13.57,
+    "weak_against": ["Gangplank", "Camille", "Yorick"]
+  },
+  {
+    "rank": 31,
+    "champion": "Sylas",
+    "role": "Mid",
+    "winrate": 50.39,
+    "pickrate": 10.6,
+    "banrate": 12.24,
+    "weak_against": ["Vex", "Yasuo", "Xerath"]
+  },
+  {
+    "rank": 32,
+    "champion": "Aatrox",
+    "role": "Top",
+    "winrate": 50.19,
+    "pickrate": 10.35,
+    "banrate": 8.91,
+    "weak_against": ["Riven", "Fiora", "Camille"]
+  },
+  {
+    "rank": 33,
+    "champion": "Lulu",
+    "role": "Support",
+    "winrate": 50.02,
+    "pickrate": 13.44,
+    "banrate": 24.68,
+    "weak_against": ["Elise", "Senna", "Bard"]
+  },
+  {
+    "rank": 34,
+    "champion": "Lee Sin",
+    "role": "Jungle",
+    "winrate": 49.7,
+    "pickrate": 20.11,
+    "banrate": 17.13,
+    "weak_against": ["Pantheon", "Poppy", "Shaco"]
+  },
+  {
+    "rank": 35,
+    "champion": "Karma",
+    "role": "Support",
+    "winrate": 49.69,
+    "pickrate": 11.25,
+    "banrate": 17.52,
+    "weak_against": ["Yuumi", "Leona", "Pyke"]
+  },
+  {
+    "rank": 36,
+    "champion": "Qiyana",
+    "role": "Jungle",
+    "winrate": 56.59,
+    "pickrate": 0.63,
+    "banrate": 0.51,
+    "weak_against": []
+  },
+  {
+    "rank": 37,
+    "champion": "Jax",
+    "role": "Top",
+    "winrate": 56.56,
+    "pickrate": 0.6,
+    "banrate": 5.5,
+    "weak_against": []
+  },
+  {
+    "rank": 38,
+    "champion": "Amumu",
+    "role": "Jungle",
+    "winrate": 56.36,
+    "pickrate": 0.54,
+    "banrate": 0.45,
+    "weak_against": []
+  },
+  {
+    "rank": 39,
+    "champion": "Malphite",
+    "role": "Top",
+    "winrate": 55.7,
+    "pickrate": 0.73,
+    "banrate": 5.43,
+    "weak_against": []
+  },
+  {
+    "rank": 40,
+    "champion": "Cassiopeia",
+    "role": "Mid",
+    "winrate": 55.31,
+    "pickrate": 1.34,
+    "banrate": 1.92,
+    "weak_against": []
+  },
+  {
+    "rank": 41,
+    "champion": "Dr. Mundo",
+    "role": "Jungle",
+    "winrate": 55.16,
+    "pickrate": 1.23,
+    "banrate": 0.93,
+    "weak_against": []
+  },
+  {
+    "rank": 42,
+    "champion": "Varus",
+    "role": "Adc",
+    "winrate": 54.59,
+    "pickrate": 0.91,
+    "banrate": 3.22,
+    "weak_against": []
+  },
+  {
+    "rank": 43,
+    "champion": "Annie",
+    "role": "Mid",
+    "winrate": 54.57,
+    "pickrate": 1.77,
+    "banrate": 0.43,
+    "weak_against": []
+  },
+  {
+    "rank": 44,
+    "champion": "Kennen",
+    "role": "Top",
+    "winrate": 54.35,
+    "pickrate": 1.86,
+    "banrate": 1.41,
+    "weak_against": []
+  },
+  {
+    "rank": 45,
+    "champion": "Nunu & Willump",
+    "role": "Jungle",
+    "winrate": 54.26,
+    "pickrate": 2.18,
+    "banrate": 0.57,
+    "weak_against": []
+  },
+  {
+    "rank": 46,
+    "champion": "Bel'Veth",
+    "role": "Jungle",
+    "winrate": 53.93,
+    "pickrate": 1.87,
+    "banrate": 2.64,
+    "weak_against": []
+  },
+  {
+    "rank": 47,
+    "champion": "Anivia",
+    "role": "Mid",
+    "winrate": 53.58,
+    "pickrate": 2.26,
+    "banrate": 1.72,
+    "weak_against": []
+  },
+  {
+    "rank": 48,
+    "champion": "Vex",
+    "role": "Mid",
+    "winrate": 53.51,
+    "pickrate": 2.65,
+    "banrate": 3.56,
+    "weak_against": []
+  },
+  {
+    "rank": 49,
+    "champion": "Taliyah",
+    "winrate": 53.33,
+    "role": "Mid",
+    "pickrate": 2.35,
+    "banrate": 0.83,
+    "weak_against": []
+  },
+  {
+    "rank": 50,
+    "champion": "Teemo",
+    "role": "Top",
+    "winrate": 53.33,
+    "pickrate": 2.58,
+    "banrate": 3.58,
+    "weak_against": []
+  },
+  {
+    "rank": 51,
+    "champion": "Xayah",
+    "role": "Adc",
+    "winrate": 53.28,
+    "pickrate": 5.21,
+    "banrate": 0.68,
+    "weak_against": ["Lucian", "Tristana", "Jhin"]
+  },
+  {
+    "rank": 52,
+    "champion": "Ekko",
+    "role": "Jungle",
+    "winrate": 53.17,
+    "pickrate": 2.39,
+    "banrate": 0.73,
+    "weak_against": []
+  },
+  {
+    "rank": 53,
+    "champion": "Elise",
+    "role": "Jungle",
+    "winrate": 53.08,
+    "pickrate": 2.62,
+    "banrate": 13.52,
+    "weak_against": ["Viego"]
+  },
+  {
+    "rank": 54,
+    "champion": "Darius",
+    "winrate": 53.03,
+    "pickrate": 2.02,
+    "banrate": 18.36,
+    "weak_against": []
+  },
+  {
+    "rank": 55,
+    "champion": "Akshan",
+    "winrate": 52.95,
+    "pickrate": 2.24,
+    "banrate": 2.76,
+    "weak_against": []
+  },
+  {
+    "rank": 56,
+    "champion": "Kayle",
+    "winrate": 52.79,
+    "pickrate": 3.18,
+    "banrate": 1.85,
+    "weak_against": []
+  },
+  {
+    "rank": 57,
+    "champion": "Sona",
+    "winrate": 52.7,
+    "pickrate": 1.82,
+    "banrate": 0.08,
+    "weak_against": []
+  },
+  {
+    "rank": 58,
+    "champion": "Kindred",
+    "winrate": 52.44,
+    "pickrate": 3.21,
+    "banrate": 3.09,
+    "weak_against": ["Naafiri", "Viego"]
+  },
+  {
+    "rank": 59,
+    "champion": "Gragas",
+    "winrate": 52.44,
+    "pickrate": 2.93,
+    "banrate": 1.16,
+    "weak_against": []
+  },
+  {
+    "rank": 60,
+    "champion": "Talon",
+    "winrate": 52.38,
+    "pickrate": 2.67,
+    "banrate": 2.84,
+    "weak_against": ["Ahri"]
+  },
+  {
+    "rank": 61,
+    "champion": "Olaf",
+    "winrate": 52.35,
+    "pickrate": 2.2,
+    "banrate": 1.55,
+    "weak_against": []
+  },
+  {
+    "rank": 62,
+    "champion": "Fizz",
+    "winrate": 52.2,
+    "pickrate": 2.11,
+    "banrate": 1.38,
+    "weak_against": []
+  },
+  {
+    "rank": 63,
+    "champion": "Warwick",
+    "winrate": 52.08,
+    "pickrate": 2.25,
+    "banrate": 2.92,
+    "weak_against": []
+  },
+  {
+    "rank": 64,
+    "champion": "Jarvan IV",
+    "winrate": 51.99,
+    "pickrate": 5.41,
+    "banrate": 1.69,
+    "weak_against": ["Gwen"]
+  },
+  {
+    "rank": 65,
+    "champion": "Rumble",
+    "winrate": 51.99,
+    "pickrate": 2.47,
+    "banrate": 1.47,
+    "weak_against": ["Jayce"]
+  },
+  {
+    "rank": 66,
+    "champion": "Diana",
+    "winrate": 51.91,
+    "pickrate": 4.09,
+    "banrate": 2.26,
+    "weak_against": ["Graves", "Lee Sin"]
+  },
+  {
+    "rank": 67,
+    "champion": "Janna",
+    "winrate": 51.91,
+    "pickrate": 4.76,
+    "banrate": 1.29,
+    "weak_against": ["Lulu", "Thresh", "Yuumi"]
+  },
+  {
+    "rank": 68,
+    "champion": "Galio",
+    "winrate": 51.91,
+    "pickrate": 4.75,
+    "banrate": 3.74,
+    "weak_against": ["Ahri", "Orianna", "Katarina"]
+  },
+  {
+    "rank": 69,
+    "champion": "Pantheon",
+    "winrate": 51.82,
+    "pickrate": 2.16,
+    "banrate": 2.43,
+    "weak_against": []
+  },
+  {
+    "rank": 70,
+    "champion": "Shaco",
+    "winrate": 51.65,
+    "pickrate": 2.24,
+    "banrate": 20.01,
+    "weak_against": []
+  },
+  {
+    "rank": 71,
+    "champion": "Twisted Fate",
+    "winrate": 51.64,
+    "pickrate": 5.97,
+    "banrate": 0.63,
+    "weak_against": ["LeBlanc", "Orianna", "Viktor"]
+  },
+  {
+    "rank": 72,
+    "champion": "Vladimir",
+    "winrate": 51.43,
+    "pickrate": 2.93,
+    "banrate": 4.76,
+    "weak_against": []
+  },
+  {
+    "rank": 73,
+    "champion": "Azir",
+    "winrate": 51.43,
+    "pickrate": 3.25,
+    "banrate": 0.43,
+    "weak_against": ["Sylas"]
+  },
+  {
+    "rank": 74,
+    "champion": "Zac",
+    "winrate": 51.34,
+    "pickrate": 4.02,
+    "banrate": 1.27,
+    "weak_against": ["Naafiri", "Lee Sin"]
+  },
+  {
+    "rank": 75,
+    "champion": "Irelia",
+    "winrate": 51.12,
+    "pickrate": 2.61,
+    "banrate": 18.51,
+    "weak_against": []
+  },
+  {
+    "rank": 76,
+    "champion": "Xin Zhao",
+    "winrate": 50.93,
+    "pickrate": 4.72,
+    "banrate": 0.95,
+    "weak_against": ["Naafiri"]
+  },
+  {
+    "rank": 77,
+    "champion": "Vi",
+    "winrate": 50.93,
+    "pickrate": 8.72,
+    "banrate": 3.22,
+    "weak_against": ["Naafiri", "Brand", "Xin Zhao"]
+  },
+  {
+    "rank": 78,
+    "champion": "Master Yi",
+    "winrate": 50.88,
+    "pickrate": 4.44,
+    "banrate": 4.31,
+    "weak_against": []
+  },
+  {
+    "rank": 79,
+    "champion": "Jax",
+    "winrate": 50.87,
+    "pickrate": 5.08,
+    "banrate": 6.53,
+    "weak_against": ["Garen", "Aatrox"]
+  },
+  {
+    "rank": 80,
+    "champion": "Orianna",
+    "winrate": 50.84,
+    "pickrate": 7.53,
+    "banrate": 1.37,
+    "weak_against": ["Zed", "Viktor", "LeBlanc"]
+  },
+  {
+    "rank": 81,
+    "champion": "Camille",
+    "winrate": 50.83,
+    "pickrate": 3.86,
+    "banrate": 1.35,
+    "weak_against": []
+  },
+  {
+    "rank": 82,
+    "champion": "Leona",
+    "winrate": 50.78,
+    "pickrate": 5.33,
+    "banrate": 3.71,
+    "weak_against": ["Braum", "Pyke", "Thresh"]
+  },
+  {
+    "rank": 83,
+    "champion": "Akali",
+    "winrate": 50.66,
+    "pickrate": 6.32,
+    "banrate": 7.19,
+    "weak_against": ["Twisted Fate", "Yasuo", "Orianna"]
+  },
+  {
+    "rank": 84,
+    "champion": "Sion",
+    "winrate": 50.63,
+    "pickrate": 3.52,
+    "banrate": 0.46,
+    "weak_against": ["Jayce"]
+  },
+  {
+    "rank": 85,
+    "champion": "Shaco",
+    "winrate": 50.53,
+    "pickrate": 5.58,
+    "banrate": 21.12,
+    "weak_against": ["Nocturne", "Naafiri", "Viego"]
+  },
+  {
+    "rank": 86,
+    "champion": "Kha'Zix",
+    "winrate": 50.48,
+    "pickrate": 5.58,
+    "banrate": 2.61,
+    "weak_against": ["Maître Yi", "Vi", "Gwen"]
+  },
+  {
+    "rank": 87,
+    "champion": "Darius",
+    "winrate": 50.47,
+    "pickrate": 5.71,
+    "banrate": 19.32,
+    "weak_against": ["Jayce", "Gangplank", "Aatrox"]
+  },
+  {
+    "rank": 88,
+    "champion": "Malzahar",
+    "winrate": 50.36,
+    "pickrate": 4.06,
+    "banrate": 3.13,
+    "weak_against": ["Ahri", "Viktor"]
+  },
+  {
+    "rank": 89,
+    "champion": "Yone",
+    "winrate": 50.24,
+    "pickrate": 6.18,
+    "banrate": 7.24,
+    "weak_against": ["Jayce", "Garen", "Yorick"]
+  },
+  {
+    "rank": 90,
+    "champion": "Gnar",
+    "winrate": 50.24,
+    "pickrate": 4.13,
+    "banrate": 1.44,
+    "weak_against": ["Jayce", "Ambessa"]
+  },
+  {
+    "rank": 91,
+    "champion": "Jhin",
+    "winrate": 50.16,
+    "pickrate": 16.56,
+    "banrate": 1.46,
+    "weak_against": ["Vayne", "Caitlyn", "Tristana"]
+  },
+  {
+    "rank": 92,
+    "champion": "Rakan",
+    "winrate": 50.14,
+    "pickrate": 5.1,
+    "banrate": 0.56,
+    "weak_against": ["Thresh", "Poppy", "Nautilus"]
+  },
+  {
+    "rank": 93,
+    "champion": "Blitzcrank",
+    "winrate": 50.05,
+    "pickrate": 5.05,
+    "banrate": 13.66,
+    "weak_against": ["Alistar", "Lulu", "Yuumi"]
+  },
+  {
+    "rank": 94,
+    "champion": "Zed",
+    "winrate": 50.04,
+    "pickrate": 6.67,
+    "banrate": 23.18,
+    "weak_against": ["Yasuo", "Ahri", "Akali"]
+  },
+  {
+    "rank": 95,
+    "champion": "Viktor",
+    "winrate": 49.9,
+    "pickrate": 7.71,
+    "banrate": 4.84,
+    "weak_against": ["Ahri", "Syndra", "Akali"]
+  },
+  {
+    "rank": 96,
+    "champion": "Xerath",
+    "winrate": 49.78,
+    "pickrate": 4.42,
+    "banrate": 5.76,
+    "weak_against": ["Syndra", "Akali", "Viktor"]
+  },
+  {
+    "rank": 97,
+    "champion": "Nautilus",
+    "winrate": 49.29,
+    "pickrate": 10.72,
+    "banrate": 10.67,
+    "weak_against": ["Rell", "Pyke", "Thresh"]
+  },
+  {
+    "rank": 98,
+    "champion": "Renekton",
+    "winrate": 49.28,
+    "pickrate": 4.8,
+    "banrate": 3.91,
+    "weak_against": ["Garen", "Riven", "Yone"]
+  },
+  {
+    "rank": 99,
+    "champion": "Yone",
+    "winrate": 49.07,
+    "pickrate": 7.36,
+    "banrate": 7.34,
+    "weak_against": ["Akali", "Twisted Fate", "Sylas"]
+  },
+  {
+    "rank": 100,
+    "champion": "Kai'Sa",
+    "winrate": 49,
+    "pickrate": 24.99,
+    "banrate": 2.61,
+    "weak_against": ["Samira", "Draven", "Xayah"]
+  },
+  {
+    "rank": 101,
+    "champion": "Viego",
+    "winrate": 48.97,
+    "pickrate": 14.2,
+    "banrate": 7.64,
+    "weak_against": ["Talon", "Zyra", "Graves"]
+  },
+  {
+    "rank": 102,
+    "champion": "Garen",
+    "winrate": 47.66,
+    "pickrate": 9.35,
+    "banrate": 9.18,
+    "weak_against": ["Yorick", "Gnar", "Mordekaiser"]
+  },
+  {
+    "rank": 103,
+    "champion": "LeBlanc",
+    "winrate": 47.62,
+    "pickrate": 10.89,
+    "banrate": 35.88,
+    "weak_against": ["Galio", "Akali", "Malzahar"]
+  },
+  {
+    "rank": 104,
+    "champion": "Kog'Maw",
+    "winrate": 54.69,
+    "pickrate": 1.51,
+    "banrate": 0.5,
+    "weak_against": []
+  },
+  {
+    "rank": 105,
+    "champion": "Nilah",
+    "winrate": 54.55,
+    "pickrate": 1.56,
+    "banrate": 2.79,
+    "weak_against": ["Kai'Sa"]
+  },
+  {
+    "rank": 106,
+    "champion": "Neeko",
+    "winrate": 54.07,
+    "pickrate": 0.66,
+    "banrate": 1.73,
+    "weak_against": []
+  },
+  {
+    "rank": 107,
+    "champion": "Taliyah",
+    "winrate": 54.03,
+    "pickrate": 1.03,
+    "banrate": 0.71,
+    "weak_against": []
+  },
+  {
+    "rank": 108,
+    "champion": "Heimerdinger",
+    "winrate": 53.3,
+    "pickrate": 0.89,
+    "banrate": 1.22,
+    "weak_against": []
+  },
+  {
+    "rank": 109,
+    "champion": "Quinn",
+    "winrate": 53.23,
+    "pickrate": 0.91,
+    "banrate": 0.79,
+    "weak_against": []
+  },
+  {
+    "rank": 110,
+    "champion": "Aurora",
+    "winrate": 52.76,
+    "pickrate": 0.62,
+    "banrate": 4.39,
+    "weak_against": []
+  },
+  {
+    "rank": 111,
+    "champion": "Illaoi",
+    "winrate": 52.72,
+    "pickrate": 1.45,
+    "banrate": 1.69,
+    "weak_against": []
+  },
+  {
+    "rank": 112,
+    "champion": "Tahm Kench",
+    "winrate": 52.59,
+    "pickrate": 0.66,
+    "banrate": 0.58,
+    "weak_against": []
+  },
+  {
+    "rank": 113,
+    "champion": "Udyr",
+    "winrate": 52.4,
+    "pickrate": 1.33,
+    "banrate": 0.69,
+    "weak_against": []
+  },
+  {
+    "rank": 114,
+    "champion": "Hwei",
+    "winrate": 52.25,
+    "pickrate": 0.55,
+    "banrate": 2.44,
+    "weak_against": []
+  },
+  {
+    "rank": 115,
+    "champion": "Ivern",
+    "winrate": 52.08,
+    "pickrate": 1.65,
+    "banrate": 0.64,
+    "weak_against": []
+  },
+  {
+    "rank": 116,
+    "champion": "Zac",
+    "winrate": 52,
+    "pickrate": 0.61,
+    "banrate": 0.97,
+    "weak_against": []
+  },
+  {
+    "rank": 117,
+    "champion": "Zac",
+    "winrate": 51.65,
+    "pickrate": 0.89,
+    "banrate": 1.1,
+    "weak_against": []
+  },
+  {
+    "rank": 118,
+    "champion": "Kayle",
+    "winrate": 51.58,
+    "pickrate": 0.93,
+    "banrate": 1.65,
+    "weak_against": []
+  },
+  {
+    "rank": 119,
+    "champion": "Nasus",
+    "winrate": 51.44,
+    "pickrate": 1.87,
+    "banrate": 1.98,
+    "weak_against": []
+  },
+  {
+    "rank": 120,
+    "champion": "Pantheon",
+    "winrate": 51.43,
+    "pickrate": 2.56,
+    "banrate": 2.46,
+    "weak_against": []
+  },
+  {
+    "rank": 121,
+    "champion": "Pantheon",
+    "winrate": 51.38,
+    "pickrate": 0.89,
+    "banrate": 1.96,
+    "weak_against": []
+  },
+  {
+    "rank": 122,
+    "champion": "Zilean",
+    "winrate": 51.32,
+    "pickrate": 2.61,
+    "banrate": 0.53,
+    "weak_against": []
+  },
+  {
+    "rank": 123,
+    "champion": "Sylas",
+    "winrate": 51.31,
+    "pickrate": 1.51,
+    "banrate": 11.35,
+    "weak_against": []
+  },
+  {
+    "rank": 124,
+    "champion": "Fiddlesticks",
+    "winrate": 51.27,
+    "pickrate": 2.7,
+    "banrate": 1.77,
+    "weak_against": []
+  },
+  {
+    "rank": 125,
+    "champion": "Amumu",
+    "winrate": 51.08,
+    "pickrate": 1.58,
+    "banrate": 0.85,
+    "weak_against": []
+  },
+  {
+    "rank": 126,
+    "champion": "Quinn",
+    "winrate": 50.97,
+    "pickrate": 1.76,
+    "banrate": 0.82,
+    "weak_against": []
+  },
+  {
+    "rank": 127,
+    "champion": "Taric",
+    "winrate": 50.92,
+    "pickrate": 1.07,
+    "banrate": 0.12,
+    "weak_against": []
+  },
+  {
+    "rank": 128,
+    "champion": "Tahm Kench",
+    "winrate": 50.85,
+    "pickrate": 1.44,
+    "banrate": 0.7,
+    "weak_against": []
+  },
+  {
+    "rank": 129,
+    "champion": "Tryndamere",
+    "winrate": 50.78,
+    "pickrate": 2.22,
+    "banrate": 1.41,
+    "weak_against": []
+  },
+  {
+    "rank": 130,
+    "champion": "Miss Fortune",
+    "winrate": 50.64,
+    "pickrate": 6.51,
+    "banrate": 2.72,
+    "weak_against": ["Tristana", "Jhin", "Ezreal"]
+  },
+  {
+    "rank": 131,
+    "champion": "LeBlanc",
+    "winrate": 50.61,
+    "pickrate": 1.62,
+    "banrate": 34.02,
+    "weak_against": []
+  },
+  {
+    "rank": 132,
+    "champion": "Dr. Mundo",
+    "winrate": 50.6,
+    "pickrate": 2.46,
+    "banrate": 0.97,
+    "weak_against": ["Aatrox"]
+  },
+  {
+    "rank": 133,
+    "champion": "Talon",
+    "winrate": 50.56,
+    "pickrate": 3.91,
+    "banrate": 3.14,
+    "weak_against": ["Naafiri", "Lee Sin"]
+  },
+  {
+    "rank": 134,
+    "champion": "Qiyana",
+    "winrate": 50.51,
+    "pickrate": 1.94,
+    "banrate": 0.68,
+    "weak_against": []
+  },
+  {
+    "rank": 135,
+    "champion": "Ekko",
+    "winrate": 50.48,
+    "pickrate": 3.05,
+    "banrate": 0.75,
+    "weak_against": ["Viego", "Lee Sin"]
+  },
+  {
+    "rank": 136,
+    "champion": "Volibear",
+    "winrate": 50.44,
+    "pickrate": 2.81,
+    "banrate": 2.9,
+    "weak_against": ["Viego", "Lee Sin"]
+  },
+  {
+    "rank": 137,
+    "champion": "Poppy",
+    "winrate": 50.43,
+    "pickrate": 1.13,
+    "banrate": 7.57,
+    "weak_against": []
+  },
+  {
+    "rank": 138,
+    "champion": "Veigar",
+    "winrate": 50.39,
+    "pickrate": 1.88,
+    "banrate": 0.33,
+    "weak_against": []
+  },
+  {
+    "rank": 139,
+    "champion": "Shen",
+    "winrate": 50.24,
+    "pickrate": 3.01,
+    "banrate": 0.27,
+    "weak_against": ["Garen"]
+  },
+  {
+    "rank": 140,
+    "champion": "Maokai",
+    "winrate": 50.2,
+    "pickrate": 2.42,
+    "banrate": 0.28,
+    "weak_against": []
+  },
+  {
+    "rank": 141,
+    "champion": "Morgana",
+    "winrate": 50.1,
+    "pickrate": 2.55,
+    "banrate": 5.83,
+    "weak_against": []
+  },
+  {
+    "rank": 142,
+    "champion": "Jinx",
+    "winrate": 50.0,
+    "pickrate": 13.87,
+    "banrate": 3.62,
+    "weak_against": ["Caitlyn", "Sivir", "Twitch"]
+  },
+  {
+    "rank": 143,
+    "champion": "Caitlyn",
+    "winrate": 49.93,
+    "pickrate": 10.59,
+    "banrate": 9.09,
+    "weak_against": ["Zeri", "Draven", "Varus"]
+  },
+  {
+    "rank": 144,
+    "champion": "Elise",
+    "winrate": 49.93,
+    "pickrate": 3.44,
+    "banrate": 13.29,
+    "weak_against": ["Nautilus", "Karma"]
+  },
+  {
+    "rank": 145,
+    "champion": "Vel'Koz",
+    "winrate": 49.89,
+    "pickrate": 2.28,
+    "banrate": 0.52,
+    "weak_against": ["Lulu"]
+  },
+  {
+    "rank": 146,
+    "champion": "Cho'Gath",
+    "winrate": 49.83,
+    "pickrate": 1.44,
+    "banrate": 1.72,
+    "weak_against": []
+  },
+  {
+    "rank": 147,
+    "champion": "Hwei",
+    "winrate": 49.76,
+    "pickrate": 3.12,
+    "banrate": 2.98,
+    "weak_against": ["Ahri"]
+  },
+  {
+    "rank": 148,
+    "champion": "Soraka",
+    "winrate": 49.76,
+    "pickrate": 4.03,
+    "banrate": 0.91,
+    "weak_against": ["Thresh", "Braum", "Nami"]
+  },
+  {
+    "rank": 149,
+    "champion": "Kassadin",
+    "winrate": 49.61,
+    "pickrate": 1.86,
+    "banrate": 1.05,
+    "weak_against": []
+  },
+  {
+    "rank": 150,
+    "champion": "Malphite",
+    "winrate": 49.57,
+    "pickrate": 3.39,
+    "banrate": 6.23,
+    "weak_against": ["Sylas"]
+  },
+  {
+    "rank": 151,
+    "champion": "K'Sante",
+    "winrate": 49.56,
+    "pickrate": 3.92,
+    "banrate": 2.99,
+    "weak_against": ["Aatrox"]
+  },
+  {
+    "rank": 152,
+    "champion": "Warwick",
+    "winrate": 49.54,
+    "pickrate": 2.12,
+    "banrate": 3.02,
+    "weak_against": []
+  },
+  {
+    "rank": 153,
+    "champion": "Bard",
+    "winrate": 49.43,
+    "pickrate": 4.28,
+    "banrate": 0.7,
+    "weak_against": ["Yuumi", "Nautilus"]
+  },
+  {
+    "rank": 154,
+    "champion": "Milio",
+    "winrate": 49.41,
+    "pickrate": 4.62,
+    "banrate": 1.57,
+    "weak_against": ["Karma", "Nami", "Thresh"]
+  },
+  {
+    "rank": 155,
+    "champion": "Karthus",
+    "winrate": 49.4,
+    "pickrate": 2.03,
+    "banrate": 5.85,
+    "weak_against": ["Lee Sin"]
+  },
+  {
+    "rank": 156,
+    "champion": "Poppy",
+    "winrate": 49.36,
+    "pickrate": 1.54,
+    "banrate": 7.65,
+    "weak_against": []
+  },
+  {
+    "rank": 157,
+    "champion": "Diana",
+    "winrate": 49.28,
+    "pickrate": 3.05,
+    "banrate": 2.2,
+    "weak_against": ["Ahri"]
+  },
+  {
+    "rank": 158,
+    "champion": "Nocturne",
+    "winrate": 49.26,
+    "pickrate": 5.28,
+    "banrate": 7.98,
+    "weak_against": ["Viego", "Lee Sin"]
+  },
+  {
+    "rank": 159,
+    "champion": "Wukong",
+    "winrate": 49.21,
+    "pickrate": 3.42,
+    "banrate": 1.15,
+    "weak_against": ["Vi", "Lee Sin"]
+  },
+  {
+    "rank": 160,
+    "champion": "Lux",
+    "winrate": 49.16,
+    "pickrate": 2.05,
+    "banrate": 1.59,
+    "weak_against": []
+  },
+  {
+    "rank": 161,
+    "champion": "Zyra",
+    "winrate": 49.15,
+    "pickrate": 2.31,
+    "banrate": 4.35,
+    "weak_against": []
+  },
+  {
+    "rank": 162,
+    "champion": "Mordekaiser",
+    "winrate": 49.09,
+    "pickrate": 3.77,
+    "banrate": 3.7,
+    "weak_against": ["Aatrox"]
+  },
+  {
+    "rank": 163,
+    "champion": "Graves",
+    "winrate": 49.03,
+    "pickrate": 6.82,
+    "banrate": 4.89,
+    "weak_against": ["Naafiri", "Kindred", "Vi"]
+  },
+  {
+    "rank": 164,
+    "champion": "Pantheon",
+    "winrate": 48.99,
+    "pickrate": 3.16,
+    "banrate": 2.53,
+    "weak_against": []
+  },
+  {
+    "rank": 165,
+    "champion": "Sylas",
+    "winrate": 48.9,
+    "pickrate": 2.45,
+    "banrate": 11.43,
+    "weak_against": []
+  },
+  {
+    "rank": 166,
+    "champion": "Hecarim",
+    "winrate": 48.8,
+    "pickrate": 5.09,
+    "banrate": 2.47,
+    "weak_against": ["Vi", "Kayn", "Lee Sin"]
+  },
+  {
+    "rank": 167,
+    "champion": "Ezreal",
+    "winrate": 48.57,
+    "pickrate": 21.64,
+    "banrate": 10.81,
+    "weak_against": ["Kalista", "Kai'Sa", "Draven"]
+  },
+  {
+    "rank": 168,
+    "champion": "Lillia",
+    "winrate": 48.48,
+    "pickrate": 6.44,
+    "banrate": 5.19,
+    "weak_against": ["Gwen", "Hecarim", "Naafiri"]
+  },
+  {
+    "rank": 169,
+    "champion": "Syndra",
+    "winrate": 48.39,
+    "pickrate": 5.31,
+    "banrate": 3.41,
+    "weak_against": ["Ahri", "LeBlanc", "Orianna"]
+  },
+  {
+    "rank": 170,
+    "champion": "Seraphine",
+    "winrate": 48.35,
+    "pickrate": 2.68,
+    "banrate": 0.35,
+    "weak_against": ["Lulu"]
+  },
+  {
+    "rank": 171,
+    "champion": "Mel",
+    "winrate": 48.34,
+    "pickrate": 2.8,
+    "banrate": 21.8,
+    "weak_against": []
+  },
+  {
+    "rank": 172,
+    "champion": "Riven",
+    "winrate": 48.11,
+    "pickrate": 4.16,
+    "banrate": 1.62,
+    "weak_against": ["Garen"]
+  },
+  {
+    "rank": 173,
+    "champion": "Ambessa",
+    "winrate": 48.04,
+    "pickrate": 5.64,
+    "banrate": 11.59,
+    "weak_against": ["Gwen", "Jayce", "Yone"]
+  },
+  {
+    "rank": 174,
+    "champion": "Irelia",
+    "winrate": 48.0,
+    "pickrate": 4.55,
+    "banrate": 18.62,
+    "weak_against": ["Jayce", "Aatrox"]
+  },
+  {
+    "rank": 175,
+    "champion": "Vladimir",
+    "winrate": 47.86,
+    "pickrate": 3.88,
+    "banrate": 5.05,
+    "weak_against": ["LeBlanc", "Ahri"]
+  },
+  {
+    "rank": 176,
+    "champion": "Lux",
+    "winrate": 47.85,
+    "pickrate": 4.23,
+    "banrate": 1.68,
+    "weak_against": ["Karma", "Lulu", "Nami"]
+  },
+  {
+    "rank": 177,
+    "champion": "Yasuo",
+    "winrate": 47.79,
+    "pickrate": 3.23,
+    "banrate": 15.77,
+    "weak_against": []
+  },
+  {
+    "rank": 178,
+    "champion": "Nidalee",
+    "winrate": 47.46,
+    "pickrate": 3.76,
+    "banrate": 3.07,
+    "weak_against": ["Viego"]
+  },
+  {
+    "rank": 179,
+    "champion": "Aurora",
+    "winrate": 47.35,
+    "pickrate": 3.78,
+    "banrate": 5.12,
+    "weak_against": ["LeBlanc", "Viktor"]
+  },
+  {
+    "rank": 180,
+    "champion": "Volibear",
+    "winrate": 47.23,
+    "pickrate": 3.55,
+    "banrate": 2.92,
+    "weak_against": ["Garen", "Aatrox"]
+  },
+  {
+    "rank": 181,
+    "champion": "Kayn",
+    "winrate": 47.19,
+    "pickrate": 5.15,
+    "banrate": 2.33,
+    "weak_against": ["Lee Sin", "Naafiri", "Shaco"]
+  },
+  {
+    "rank": 182,
+    "champion": "Zed",
+    "winrate": 47.08,
+    "pickrate": 5.53,
+    "banrate": 23.2,
+    "weak_against": ["Gwen", "Viego", "Vi"]
+  },
+  {
+    "rank": 183,
+    "champion": "Swain",
+    "winrate": 53.23,
+    "pickrate": 0.91,
+    "banrate": 0.69,
+    "weak_against": []
+  },
+  {
+    "rank": 184,
+    "champion": "Rengar",
+    "winrate": 52.94,
+    "pickrate": 0.5,
+    "banrate": 1.41,
+    "weak_against": []
+  },
+  {
+    "rank": 185,
+    "champion": "Shen",
+    "winrate": 51.92,
+    "pickrate": 0.51,
+    "banrate": 0.2,
+    "weak_against": []
+  },
+  {
+    "rank": 186,
+    "champion": "Twitch",
+    "winrate": 51.92,
+    "pickrate": 2.67,
+    "banrate": 2.75,
+    "weak_against": ["Ezreal"]
+  },
+  {
+    "rank": 187,
+    "champion": "Yasuo",
+    "winrate": 51.9,
+    "pickrate": 1.03,
+    "banrate": 14.22,
+    "weak_against": []
+  },
+  {
+    "rank": 188,
+    "champion": "Samira",
+    "winrate": 51.37,
+    "pickrate": 2.85,
+    "banrate": 2.5,
+    "weak_against": ["Tristana", "Jinx", "Ezreal"]
+  },
+  {
+    "rank": 189,
+    "champion": "Kalista",
+    "winrate": 51.04,
+    "pickrate": 1.65,
+    "banrate": 0.44,
+    "weak_against": []
+  },
+  {
+    "rank": 190,
+    "champion": "Corki",
+    "winrate": 50.68,
+    "pickrate": 3.59,
+    "banrate": 1.33,
+    "weak_against": ["Lucian", "Jinx", "Jhin"]
+  },
+  {
+    "rank": 191,
+    "champion": "Vayne",
+    "winrate": 50.25,
+    "pickrate": 3.95,
+    "banrate": 2.7,
+    "weak_against": ["Lucian", "Tristana"]
+  },
+  {
+    "rank": 192,
+    "champion": "Maokai",
+    "winrate": 50.0,
+    "pickrate": 0.58,
+    "banrate": 0.23,
+    "weak_against": []
+  },
+  {
+    "rank": 193,
+    "champion": "Cassiopeia",
+    "winrate": 50.0,
+    "pickrate": 0.88,
+    "banrate": 1.88,
+    "weak_against": []
+  },
+  {
+    "rank": 194,
+    "champion": "Sivir",
+    "winrate": 49.87,
+    "pickrate": 3.87,
+    "banrate": 0.62,
+    "weak_against": ["Caitlyn", "Tristana"]
+  },
+  {
+    "rank": 195,
+    "champion": "Renata Glasc",
+    "winrate": 49.62,
+    "pickrate": 1.29,
+    "banrate": 0.24,
+    "weak_against": []
+  },
+  {
+    "rank": 196,
+    "champion": "Galio",
+    "winrate": 49.34,
+    "pickrate": 0.75,
+    "banrate": 2.96,
+    "weak_against": []
+  },
+  {
+    "rank": 197,
+    "champion": "Rek'Sai",
+    "winrate": 49.22,
+    "pickrate": 1.56,
+    "banrate": 0.52,
+    "weak_against": []
+  },
+  {
+    "rank": 198,
+    "champion": "Smolder",
+    "winrate": 49.11,
+    "pickrate": 4.37,
+    "banrate": 0.58,
+    "weak_against": ["Lucian", "Jhin", "Ezreal"]
+  },
+  {
+    "rank": 199,
+    "champion": "Ashe",
+    "winrate": 48.8,
+    "pickrate": 9.14,
+    "banrate": 5.86,
+    "weak_against": ["Varus", "Lucian", "Jinx"]
+  },
+  {
+    "rank": 200,
+    "champion": "Trundle",
+    "winrate": 48.73,
+    "pickrate": 1.54,
+    "banrate": 0.47,
+    "weak_against": []
+  },
+  {
+    "rank": 201,
+    "champion": "Maokai",
+    "winrate": 48.72,
+    "pickrate": 0.58,
+    "banrate": 0.19,
+    "weak_against": []
+  },
+  {
+    "rank": 202,
+    "champion": "Ryze",
+    "winrate": 48.68,
+    "pickrate": 1.49,
+    "banrate": 0.66,
+    "weak_against": []
+  },
+  {
+    "rank": 203,
+    "champion": "Varus",
+    "winrate": 48.68,
+    "pickrate": 10.03,
+    "banrate": 3.47,
+    "weak_against": ["Xayah", "Miss Fortune", "Jhin"]
+  },
+  {
+    "rank": 204,
+    "champion": "Rengar",
+    "winrate": 48.67,
+    "pickrate": 1.84,
+    "banrate": 2.38,
+    "weak_against": []
+  },
+  {
+    "rank": 205,
+    "champion": "Kennen",
+    "winrate": 48.41,
+    "pickrate": 0.77,
+    "banrate": 1.18,
+    "weak_against": []
+  },
+  {
+    "rank": 206,
+    "champion": "Zyra",
+    "winrate": 48.39,
+    "pickrate": 2.29,
+    "banrate": 4.33,
+    "weak_against": []
+  },
+  {
+    "rank": 207,
+    "champion": "Fiddlesticks",
+    "winrate": 47.88,
+    "pickrate": 1.51,
+    "banrate": 1.58,
+    "weak_against": []
+  },
+  {
+    "rank": 208,
+    "champion": "Swain",
+    "winrate": 47.83,
+    "pickrate": 1.7,
+    "banrate": 0.88,
+    "weak_against": []
+  },
+  {
+    "rank": 209,
+    "champion": "Vayne",
+    "winrate": 47.81,
+    "pickrate": 1.12,
+    "banrate": 2.33,
+    "weak_against": []
+  },
+  {
+    "rank": 210,
+    "champion": "Evelynn",
+    "winrate": 47.73,
+    "pickrate": 2.15,
+    "banrate": 2.03,
+    "weak_against": ["Lee Sin"]
+  },
+  {
+    "rank": 211,
+    "champion": "Brand",
+    "winrate": 47.43,
+    "pickrate": 1.72,
+    "banrate": 1.8,
+    "weak_against": []
+  },
+  {
+    "rank": 212,
+    "champion": "Jayce",
+    "winrate": 47.3,
+    "pickrate": 1.18,
+    "banrate": 13.23,
+    "weak_against": []
+  },
+  {
+    "rank": 213,
+    "champion": "Viktor",
+    "winrate": 47.29,
+    "pickrate": 0.63,
+    "banrate": 3.77,
+    "weak_against": []
+  },
+  {
+    "rank": 214,
+    "champion": "Aurelion Sol",
+    "winrate": 47.22,
+    "pickrate": 2.11,
+    "banrate": 0.55,
+    "weak_against": []
+  },
+  {
+    "rank": 215,
+    "champion": "Urgot",
+    "winrate": 47.04,
+    "pickrate": 2.49,
+    "banrate": 0.59,
+    "weak_against": []
+  },
+  {
+    "rank": 216,
+    "champion": "Cho'Gath",
+    "winrate": 46.89,
+    "pickrate": 1.9,
+    "banrate": 1.76,
+    "weak_against": []
+  },
+  {
+    "rank": 217,
+    "champion": "Singed",
+    "winrate": 46.85,
+    "pickrate": 3.04,
+    "banrate": 1.13,
+    "weak_against": []
+  },
+  {
+    "rank": 218,
+    "champion": "Briar",
+    "winrate": 46.48,
+    "pickrate": 2.22,
+    "banrate": 1.33,
+    "weak_against": []
+  },
+  {
+    "rank": 219,
+    "champion": "Xerath",
+    "winrate": 46.28,
+    "pickrate": 3.57,
+    "banrate": 5.7,
+    "weak_against": ["Thresh", "Lulu", "Karma"]
+  },
+  {
+    "rank": 220,
+    "champion": "Kled",
+    "winrate": 46.27,
+    "pickrate": 0.99,
+    "banrate": 0.29,
+    "weak_against": []
+  },
+  {
+    "rank": 221,
+    "champion": "Zoe",
+    "winrate": 46.12,
+    "pickrate": 2.52,
+    "banrate": 2.48,
+    "weak_against": ["Ahri", "LeBlanc"]
+  },
+  {
+    "rank": 222,
+    "champion": "Ryze",
+    "winrate": 46.07,
+    "pickrate": 2.98,
+    "banrate": 0.72,
+    "weak_against": ["Ahri", "LeBlanc"]
+  },
+  {
+    "rank": 223,
+    "champion": "Wukong",
+    "winrate": 46.06,
+    "pickrate": 1.25,
+    "banrate": 1.04,
+    "weak_against": []
+  },
+  {
+    "rank": 224,
+    "champion": "Akali",
+    "winrate": 45.23,
+    "pickrate": 1.39,
+    "banrate": 6.4,
+    "weak_against": []
+  },
+  {
+    "rank": 225,
+    "champion": "Brand",
+    "winrate": 45.18,
+    "pickrate": 4.27,
+    "banrate": 1.88,
+    "weak_against": ["Lee Sin", "Lillia", "Naafiri"]
+  },
+  {
+    "rank": 226,
+    "champion": "Ornn",
+    "winrate": 44.6,
+    "pickrate": 2.87,
+    "banrate": 0.22,
+    "weak_against": []
+  },
+  {
+    "rank": 227,
+    "champion": "Ziggs",
+    "winrate": 50.47,
+    "pickrate": 1.04,
+    "banrate": 0.19,
+    "weak_against": []
+  },
+  {
+    "rank": 228,
+    "champion": "Heimerdinger",
+    "winrate": 47.62,
+    "pickrate": 0.52,
+    "banrate": 1.04,
+    "weak_against": []
+  },
+  {
+    "rank": 229,
+    "champion": "Camille",
+    "winrate": 47.57,
+    "pickrate": 0.51,
+    "banrate": 0.74,
+    "weak_against": []
+  },
+  {
+    "rank": 230,
+    "champion": "Aphelios",
+    "winrate": 47.46,
+    "pickrate": 5.69,
+    "banrate": 0.64,
+    "weak_against": ["Jinx", "Ashe", "Miss Fortune"]
+  },
+  {
+    "rank": 231,
+    "champion": "Gragas",
+    "winrate": 46.71,
+    "pickrate": 0.74,
+    "banrate": 0.97,
+    "weak_against": []
+  },
+  {
+    "rank": 232,
+    "champion": "Rammus",
+    "winrate": 46.67,
+    "pickrate": 0.88,
+    "banrate": 1.3,
+    "weak_against": []
+  },
+  {
+    "rank": 233,
+    "champion": "Ambessa",
+    "winrate": 46.67,
+    "pickrate": 0.51,
+    "banrate": 8.93,
+    "weak_against": []
+  },
+  {
+    "rank": 234,
+    "champion": "Mel",
+    "winrate": 46.64,
+    "pickrate": 1.16,
+    "banrate": 19.41,
+    "weak_against": []
+  },
+  {
+    "rank": 235,
+    "champion": "Swain",
+    "winrate": 46.41,
+    "pickrate": 1.02,
+    "banrate": 0.79,
+    "weak_against": []
+  },
+  {
+    "rank": 236,
+    "champion": "Zeri",
+    "winrate": 46.29,
+    "pickrate": 4.02,
+    "banrate": 0.36,
+    "weak_against": ["Varus", "Tristana", "Kai'Sa"]
+  },
+  {
+    "rank": 237,
+    "champion": "Corki",
+    "winrate": 46.03,
+    "pickrate": 0.92,
+    "banrate": 1.24,
+    "weak_against": []
+  },
+  {
+    "rank": 238,
+    "champion": "Shyvana",
+    "winrate": 45.92,
+    "pickrate": 0.96,
+    "banrate": 0.2,
+    "weak_against": []
+  },
+  {
+    "rank": 239,
+    "champion": "Skarner",
+    "winrate": 45.45,
+    "pickrate": 0.75,
+    "banrate": 1.08,
+    "weak_against": []
+  },
+  {
+    "rank": 240,
+    "champion": "Garen",
+    "winrate": 44.89,
+    "pickrate": 1.1,
+    "banrate": 8.41,
+    "weak_against": []
+  },
+  {
+    "rank": 241,
+    "champion": "Sejuani",
+    "winrate": 44.76,
+    "pickrate": 1.87,
+    "banrate": 0.15,
+    "weak_against": []
+  },
+  {
+    "rank": 242,
+    "champion": "Tristana",
+    "winrate": 44.19,
+    "pickrate": 1.47,
+    "banrate": 9.02,
+    "weak_against": []
+  },
+  {
+    "rank": 243,
+    "champion": "Trundle",
+    "winrate": 43.64,
+    "pickrate": 0.54,
+    "banrate": 0.4,
+    "weak_against": []
+  },
+  {
+    "rank": 244,
+    "champion": "Mel",
+    "winrate": 42.06,
+    "pickrate": 2.39,
+    "banrate": 21.36,
+    "weak_against": ["Thresh"]
+  },
+  {
+    "rank": 245,
+    "champion": "Smolder",
+    "winrate": 41.89,
+    "pickrate": 0.72,
+    "banrate": 0.45,
+    "weak_against": []
+  },
+  {
+    "rank": 246,
+    "champion": "Vel'Koz",
+    "winrate": 41.72,
+    "pickrate": 0.8,
+    "banrate": 0.4,
+    "weak_against": []
+  },
+  {
+    "rank": 247,
+    "champion": "Smolder",
+    "winrate": 39.62,
+    "pickrate": 0.52,
+    "banrate": 0.37,
+    "weak_against": []
+  }
+]

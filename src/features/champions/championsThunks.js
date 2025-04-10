@@ -1,7 +1,5 @@
-// src/features/champions/championsThunks.js
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-// Créer un thunk pour récupérer les champions
 export const fetchChampions = createAsyncThunk(
   "champions/fetchChampions",
   async () => {

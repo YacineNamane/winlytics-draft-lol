@@ -3,16 +3,14 @@ import { fetchChampions } from "./championsThunks";
 
 const initialState = {
   list: [],
-  status: "idle", // idle | loading | succeeded | failed
+  status: "idle",
   error: null,
 };
 
 const championsSlice = createSlice({
   name: "champions",
   initialState,
-  reducers: {
-    // Si besoin d'actions synchrones
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchChampions.pending, (state) => {

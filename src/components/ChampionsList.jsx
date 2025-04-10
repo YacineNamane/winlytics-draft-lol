@@ -1,4 +1,3 @@
-// src/components/ChampionsList.jsx
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchChampions } from "../features/champions/championsThunks";
@@ -17,6 +16,7 @@ const ChampionsList = () => {
   const status = useSelector(selectChampionsStatus);
   const error = useSelector(selectChampionsError);
   const [selectedChampion, setSelectedChampion] = useState(null);
+  const [searchQuery, setSearchQuery] = useState(""); // Ajout de l'état de recherche
 
   useEffect(() => {
     dispatch(fetchChampions());
@@ -36,20 +36,36 @@ const ChampionsList = () => {
     }
   };
 
+  // Filtrage des champions selon la recherche
+  const filteredChampions = champions.filter((champion) =>
+    champion.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="champions-pannel">
       <h2>List of Champions</h2>
+      <input
+        type="text"
+        placeholder="Search ..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+
       <div className="champions-section">
-        {champions.map((champion) => (
-          <div key={champion.id} style={{ marginBottom: "20px" }}>
-            <h3>{champion.name}</h3>
+        {filteredChampions.map((champion) => (
+          <div
+            className="champions-icon-select"
+            key={champion.id}
+            style={{ marginBottom: "20px" }}
+          >
             <img
               src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champion.image.full}`}
               alt={champion.name}
               style={{ width: "100px", height: "100px", objectFit: "cover" }}
             />
+            <h3>{champion.name}</h3>
             <button onClick={() => handleChampionClick(champion)}>
-              Select
+              LOCK IN
             </button>
           </div>
         ))}

@@ -9,3 +9,8 @@ export const selectDraft = createSelector(
 
 export const selectChampionForRole = (role) =>
   createSelector([selectDraft], (roles) => roles[role]);
+
+export const selectAverageWinrate = createSelector(
+  [selectDraftState],
+  (draft) => draft.averageWinrate
+);
