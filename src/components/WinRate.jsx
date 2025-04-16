@@ -62,27 +62,25 @@ const ProcessedData = () => {
   };
 
   const getChampionSplash = (championName) => {
-    // Essaye de trouver un champion existant dans les données
     const champ = champions.find((c) => c.name === championName);
 
     if (champ) {
       return `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champ.id}_0.jpg`;
     }
 
-    // Si non trouvé, on tente une version "formatée"
     const fallbackName = championName
-      .normalize("NFD") // enlève les accents
-      .replace(/[\u0300-\u036f]/g, "") // supprime les caractères diacritiques
-      .replace(/[^a-zA-Z0-9]/g, "") // supprime tout caractère non alphanumérique
-      .replace(/\s+/g, ""); // supprime les espaces
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-zA-Z0-9]/g, "")
+      .replace(/\s+/g, "");
 
     return `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${fallbackName}_0.jpg`;
   };
 
   const getBarColor = (value) => {
-    if (value >= 50) return "#4CAF50"; // vert
-    if (value >= 30) return "#FFC107"; // jaune
-    return "#F44336"; // rouge
+    if (value >= 50) return "#4CAF50";
+    if (value >= 30) return "#FFC107";
+    return "#F44336";
   };
 
   const renderBar = (value) => (
@@ -137,15 +135,15 @@ const ProcessedData = () => {
                       objectFit: "cover",
                     }}
                   />
-                  {/* Nom du champion en haut à droite */}
+
                   <div
                     style={{
                       position: "absolute",
-                      top: "8px", // Espace du haut
-                      left: "8px", // Espace de gauche
+                      top: "8px",
+                      left: "8px",
                       backgroundColor: "rgba(0, 0, 0, 0.7)",
                       color: "#fff",
-                      fontSize: "14px", // Ajuste la taille du texte si nécessaire
+                      fontSize: "14px",
                       fontWeight: "bold",
                       padding: "4px 8px",
                       borderRadius: "5px",

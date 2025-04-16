@@ -6,7 +6,8 @@ import {
   selectChampionsStatus,
   selectChampionsError,
 } from "../features/champions/championsSelectors";
-import { selectChampion } from "../features/draft/draftSlice";
+import { selectChampion, switchActiveSide } from "../features/draft/draftSlice";
+import { selectActiveSide } from "../features/draft/draftSelectors";
 
 const roles = ["top", "jungle", "mid", "adc", "support"];
 
@@ -15,15 +16,14 @@ const ChampionsList = () => {
   const champions = useSelector(selectAllChampions);
   const status = useSelector(selectChampionsStatus);
   const error = useSelector(selectChampionsError);
+  const activeSide = useSelector(selectActiveSide);
+
   const [selectedChampion, setSelectedChampion] = useState(null);
-  const [searchQuery, setSearchQuery] = useState(""); // Ajout de l'état de recherche
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     dispatch(fetchChampions());
   }, [dispatch]);
-
-  if (status === "loading") return <p>loading...</p>;
-  if (status === "failed") return <p>Error: {error}</p>;
 
   const handleChampionClick = (champion) => {
     setSelectedChampion(champion);
@@ -36,20 +36,37 @@ const ChampionsList = () => {
     }
   };
 
-  // Filtrage des champions selon la recherche
+  const handleSwitchSide = () => {
+    dispatch(switchActiveSide());
+  };
+
   const filteredChampions = champions.filter((champion) =>
     champion.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  if (status === "loading") return <p>loading...</p>;
+  if (status === "failed") return <p>Error: {error}</p>;
+
   return (
     <div className="champions-pannel">
       <h2>List of Champions</h2>
-      <input
-        type="text"
-        placeholder="Search ..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
+      <div className="cl-header">
+        <div>
+          <p>
+            Active Draft: <strong>{activeSide.toUpperCase()}</strong>
+          </p>
+        </div>
+        <button onClick={handleSwitchSide}>
+          Switch to {activeSide === "ally" ? "ENEMY" : "ALLY"} Draft
+        </button>
+
+        <input
+          type="text"
+          placeholder="Search ..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
 
       <div className="champions-section">
         {filteredChampions.map((champion) => (
@@ -61,7 +78,7 @@ const ChampionsList = () => {
             <img
               src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champion.image.full}`}
               alt={champion.name}
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
+              style={{ width: "80px", height: "80px", objectFit: "cover" }}
             />
             <h3>{champion.name}</h3>
             <button onClick={() => handleChampionClick(champion)}>

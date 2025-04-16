@@ -2,15 +2,20 @@ import { createSelector } from "@reduxjs/toolkit";
 
 export const selectDraftState = (state) => state.draft;
 
-export const selectDraft = createSelector(
-  [selectDraftState],
-  (draft) => draft.roles
-);
+export const selectRolesBySide = (side) =>
+  createSelector([selectDraftState], (draft) => draft[side]);
 
-export const selectChampionForRole = (role) =>
-  createSelector([selectDraft], (roles) => roles[role]);
+export const selectActiveSide = createSelector(
+  [selectDraftState],
+  (draft) => draft.activeSide
+);
 
 export const selectAverageWinrate = createSelector(
   [selectDraftState],
   (draft) => draft.averageWinrate
+);
+
+export const selectWinrates = createSelector(
+  [selectDraftState],
+  (draft) => draft.winrates
 );

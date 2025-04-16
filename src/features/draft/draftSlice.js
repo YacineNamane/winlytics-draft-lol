@@ -1,15 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  roles: {
+  ally: {
     top: null,
     jungle: null,
     mid: null,
     adc: null,
     support: null,
   },
+  enemy: {
+    top: null,
+    jungle: null,
+    mid: null,
+    adc: null,
+    support: null,
+  },
+  activeSide: "ally",
   winrates: [],
-  averageWinrate: null,
+  averageWinrate: {
+    ally: null,
+    enemy: null,
+  },
 };
 
 const draftSlice = createSlice({
@@ -18,32 +29,42 @@ const draftSlice = createSlice({
   reducers: {
     selectChampion: (state, action) => {
       const { role, champion } = action.payload;
-      if (!state.roles) {
-        state.roles = { ...initialState.roles };
-      }
-      state.roles[role] = champion;
+      state[state.activeSide][role] = champion;
+    },
+    switchActiveSide: (state) => {
+      state.activeSide = state.activeSide === "ally" ? "enemy" : "ally";
     },
     setWinrates: (state, action) => {
       state.winrates = action.payload;
     },
     calculateAverageWinrate: (state) => {
-      const selectedChampions = Object.values(state.roles).filter(Boolean);
-      if (selectedChampions.length === 0) return;
+      ["ally", "enemy"].forEach((side) => {
+        const champions = Object.values(state[side]).filter(Boolean);
+        if (champions.length === 0) {
+          state.averageWinrate[side] = null;
+          return;
+        }
 
-      const totalWinrate = selectedChampions.reduce((total, champion) => {
-        const winrateEntry = state.winrates.find(
-          (entry) => entry.champion === champion.name
+        const totalWinrate = champions.reduce((total, champion) => {
+          const found = state.winrates.find(
+            (c) => c.champion === champion.name
+          );
+          return found ? total + found.winrate : total;
+        }, 0);
+
+        state.averageWinrate[side] = (totalWinrate / champions.length).toFixed(
+          2
         );
-        return winrateEntry ? total + winrateEntry.winrate : total;
-      }, 0);
-
-      state.averageWinrate = (totalWinrate / selectedChampions.length).toFixed(
-        2
-      );
+      });
     },
   },
 });
 
-export const { selectChampion, setWinrates, calculateAverageWinrate } =
-  draftSlice.actions;
+export const {
+  selectChampion,
+  switchActiveSide,
+  setWinrates,
+  calculateAverageWinrate,
+} = draftSlice.actions;
+
 export default draftSlice.reducer;

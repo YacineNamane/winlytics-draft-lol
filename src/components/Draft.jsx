@@ -1,95 +1,98 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
-  selectDraft,
+  selectRolesBySide,
   selectAverageWinrate,
+  selectWinrates,
 } from "../features/draft/draftSelectors";
 import {
   setWinrates,
   calculateAverageWinrate,
 } from "../features/draft/draftSlice";
 
-const Draft = () => {
+const roleLogos = {
+  top: "/src/assets/Top.png",
+  jungle: "/src/assets/Jungle.png",
+  mid: "/src/assets/Mid.png",
+  adc: "/src/assets/Adc.png",
+  support: "/src/assets/Support.png",
+};
+
+const Draft = ({ side }) => {
   const dispatch = useDispatch();
-  const draft = useSelector(selectDraft);
-  const winrates = useSelector((state) => state.draft.winrates);
+  const draft = useSelector((state) => state.draft[side]);
+  const winrates = useSelector(selectWinrates);
   const averageWinrate = useSelector(selectAverageWinrate);
 
   useEffect(() => {
     fetch("/src/winrate.json")
-      .then((response) => response.json())
-      .then((data) => {
-        dispatch(setWinrates(data));
-      })
-      .catch((error) => console.error("Erreur chargement winrate:", error));
+      .then((res) => res.json())
+      .then((data) => dispatch(setWinrates(data)))
+      .catch((err) => console.error("Erreur winrate:", err));
   }, [dispatch]);
 
-  const handleSimulateDraft = () => {
+  const getWinrateForChampion = (championName) => {
+    const champ = winrates.find((c) => c.champion === championName);
+    return champ ? champ.winrate : "N/A";
+  };
+
+  const handleSimulate = () => {
     dispatch(calculateAverageWinrate());
   };
 
-  const getWinrateForChampion = (championName) => {
-    const championData = winrates.find(
-      (item) => item.champion === championName
-    );
-    return championData ? championData.winrate : "N/A"; // En cas de pas de disponibilté de winrate
-  };
-
-  const roleLogos = {
-    top: "/src/assets/Top.png",
-    jungle: "/src/assets/Jungle.png",
-    mid: "/src/assets/Mid.png",
-    adc: "/src/assets/Adc.png",
-    support: "/src/assets/Support.png",
-  };
-
-  return (
+  const renderDraft = () => (
     <div className="draft-section">
-      <div>
-        <h2>Draft</h2>
-      </div>
-
+      <h3>{side.toUpperCase()} DRAFT</h3>
       <div className="five-stack-draft">
-        {Object.entries(draft).map(
-          ([role, champion]) =>
-            champion && (
-              <div key={role} className="draft-section-role">
-                <img
-                  className="role-icone"
-                  src={roleLogos[role]}
-                  alt={role}
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                    marginRight: "10px",
-                  }}
-                />
-                <p>{champion.name}</p>
-                <img
-                  className="champion-draft-img"
-                  src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champion.image.full}`}
-                  alt={champion.name}
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                    objectFit: "cover",
-                  }}
-                />
-
-                <p>WR: {getWinrateForChampion(champion.name)}%</p>
-              </div>
-            )
+        {Object.entries(draft).map(([role, champ]) =>
+          champ ? (
+            <div key={`${side}-${role}`} className="draft-section-role">
+              <img
+                src={roleLogos[role]}
+                alt={role}
+                style={{ width: "50px", height: "50px" }}
+              />
+              <p>{champ.name}</p>
+              <img
+                src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champ.image.full}`}
+                alt={champ.name}
+                style={{ width: "90px", height: "90px" }}
+              />
+              <p>WR: {getWinrateForChampion(champ.name)}%</p>
+            </div>
+          ) : (
+            <div key={`${side}-${role}`} className="draft-role empty">
+              <img
+                src={roleLogos[role]}
+                alt={role}
+                style={{ width: "50px", height: "50px" }}
+              />
+              <p>Empty</p>
+            </div>
+          )
         )}
       </div>
+    </div>
+  );
 
-      {Object.values(draft).filter(Boolean).length === 5 && (
-        <div className="sim-section">
-          <button onClick={handleSimulateDraft}>Simulate</button>
-          {averageWinrate !== null && (
-            <p>Average Winrate : {averageWinrate}%</p>
-          )}
-        </div>
-      )}
+  return (
+    <div className="draft-container">
+      {renderDraft()}
+
+      <div
+        className={`sim-section ${
+          draft && Object.values(draft).filter(Boolean).length === 5
+            ? "visible"
+            : "hidden-placeholder"
+        }`}
+      >
+        <button onClick={handleSimulate}>Simulate</button>
+        {averageWinrate[side] !== null && (
+          <p>
+            {side.toUpperCase()} Avg WR: {averageWinrate[side]}%
+          </p>
+        )}
+      </div>
     </div>
   );
 };
