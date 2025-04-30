@@ -104,7 +104,7 @@ const ProcessedData = () => {
         <p>Chargement...</p>
       ) : (
         <table
-          style={{ width: "80%", borderCollapse: "collapse", margin: "auto" }}
+          style={{ width: "90%", borderCollapse: "collapse", margin: "auto" }}
         >
           <thead>
             <tr>
@@ -122,6 +122,7 @@ const ProcessedData = () => {
                     padding: "10px",
                     position: "relative",
                     width: "25%",
+                    height: 130,
                   }}
                 >
                   <img
@@ -130,8 +131,8 @@ const ProcessedData = () => {
                     style={{
                       borderRadius: 8,
                       marginBottom: 8,
-                      width: 270,
-                      height: 110,
+                      width: "100%",
+                      height: "100%",
                       objectFit: "cover",
                     }}
                   />
@@ -152,15 +153,15 @@ const ProcessedData = () => {
                     {champ.champion}
                   </div>
                 </td>
-                <td>
+                <td style={{ padding: 15 }}>
                   <div>{champ.winrate}%</div>
                   {renderBar(parseFloat(champ.winrate))}
                 </td>
-                <td>
+                <td style={{ padding: 15 }}>
                   <div>{champ.pickrate}%</div>
                   {renderBar(parseFloat(champ.pickrate))}
                 </td>
-                <td>
+                <td style={{ padding: 15 }}>
                   <div>{champ.banrate}%</div>
                   {renderBar(parseFloat(champ.banrate))}
                 </td>

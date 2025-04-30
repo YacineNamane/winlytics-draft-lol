@@ -3,13 +3,16 @@
   padding: 1rem;
   text-align: center;
   background: #0e0e14;
+  font-family: "Inter", sans-serif;
 }
 
 .champions-section {
   min-width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
-  background: #121212;
+  background-image: url(/src/assets/OVLDS.jpg);
+  background-size: cover;
+  background-position: center;
   padding: 0px 0px 0px 23px;
   gap: 15px;
   display: flex;
@@ -31,16 +34,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 8px;
   width: auto;
   background: #121212;
-  padding: 7px;
+  padding: 5px;
+  height: 15%;
 }
 
 .draft-section-role p {
   width: 30%;
   font-weight: bold;
-  font-size: 0.85em;
+  font-size: 0.73em;
 }
 .draft-section h2 {
   display: flex;
@@ -79,13 +83,14 @@
   height: 85vh;
   width: 100%;
   margin: auto;
+  padding-top: 55px;
 }
 .champions-pannel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
   width: 54%;
   height: 100%;
 }
@@ -98,20 +103,23 @@
   align-items: center;
   margin-bottom: 20px;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 5px;
   width: 20%;
 }
+.champions-icon-select h3 {
+  font-size: 0.92em;
+}
 .champions-icon-select img {
-  border: 1px solid #ffffff7a;
+  border: 1px solid #0000007a;
 }
 .champions-icon-select button {
   display: inline-block;
   color: #dff6ff;
   background: #272424e6 !important;
-  padding: 10px 30px;
+  padding: 8px 14px;
   font-weight: bold;
-  font-family: "Arial", sans-serif;
-  font-size: 0.8em;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72em;
   letter-spacing: 1px;
   text-align: center;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
@@ -139,16 +147,12 @@
   box-sizing: border-box;
 }
 
-/* Test Scroll * /
-
-/* Cible l'élément scrollable */
 .champions-section {
   overflow-y: auto;
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #5b4e08 #1a1a1a; /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #5b4e08 #1a1a1a;
 }
 
-/* Pour Chrome, Edge, Safari */
 .champions-section::-webkit-scrollbar {
   width: 8px;
   appearance: none;
@@ -201,6 +205,10 @@
   padding: 4px;
   box-sizing: border-box;
 }
+.sim-section span {
+  color: #ff6b85;
+  font-weight: bold;
+}
 .role-selection {
   z-index: 0;
   position: absolute;
@@ -215,40 +223,47 @@
 
 /*Banner*/
 .banner {
+  position: relative;
+  z-index: 10000;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0e0e14;
+  background: #0e0e142e;
+  border: 1px solid #7f7f7f;
+  border-radius: 100px;
+}
 
-  border-bottom: 1px solid #7f7f7f;
-}
-h1 {
-  font-size: 1em;
-}
 .banner-left {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 55%;
   gap: 40px;
+  padding-left: 13px;
+}
+.banner-left img {
+  height: 60px;
 }
 .banner-right {
   background: transparent;
-  border: 1px solid #ccc;
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
   font-size: 14px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
 }
 .banner-right a {
   text-decoration: none;
-  color: #4b0291;
+  color: #b465ff;
   font-weight: bold;
+  border: 1px SOlid #dff6ff66;
+  border-radius: 20px;
+  padding: 8px;
+  transition: all 0.3s ease;
 }
 nav {
   display: flex;
-  gap: 25px;
+  gap: 35px;
 }
 nav a {
   color: #ccc;
@@ -256,20 +271,47 @@ nav a {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 nav a:hover {
-  color: #4b0291;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.banner-right:hover {
-  background: #fff;
-  color: #6704c4;
+.banner-right a:hover {
+  background: #ffffff21;
+  color: #e00397;
 }
 .cl-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
   gap: 10px;
+}
+.cl-header button {
+  background: transparent;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 2px solid #dff6ff;
+  border-radius: 21px;
+  width: 16%;
+  min-width: 150px;
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cl-header button:hover {
+  color: #d341d3;
+  border: 2px solid #d341d3bf;
+}
+.cl-header input {
+  font-size: 0.9em;
+  font-family: inter, sans-serif;
+  font-weight: bold;
+  color: #ff6b85;
 }
 .draft-section h3 {
   display: flex;
@@ -277,6 +319,22 @@ nav a:hover {
   align-items: center;
   height: 20%;
   margin: 0;
+}
+.draft-team-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.draft-team-selection p {
+  width: 35%;
+  font-weight: 200;
+  margin: 0;
+}
+.draft-team-selection span {
+  color: #ff6b85;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 .sim-section.hidden-placeholder {
   visibility: hidden;
@@ -287,7 +345,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 23%;
+  width: 30%;
   height: 100%;
 }
 .empty {
@@ -299,4 +357,273 @@ nav a:hover {
   background: #121212;
   padding: 7px;
   height: 15%;
+}
+
+/*Landing Page*/
+.landing-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+.button-type-container {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 35%;
+  height: 135px;
+}
+.button-type-container button {
+  padding: 12px 24px;
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  background-color: #1a1818c7;
+  border: 2px Solid;
+  color: white;
+  cursor: pointer;
+  height: 75%;
+  width: 40%;
+  min-width: 273px;
+  transition: background 0.3s ease;
+}
+.button-type-container button:hover {
+  background-color: #0e0e14ad;
+}
+.type-container {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  width: 50%;
+  height: 135px;
+}
+.type-container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Typewriter span {
+  font-weight: bold;
+  text-transform: lowercase;
+}
+.welcome-section {
+  display: inline-block;
+  text-align: left;
+}
+.welcome-section-title span {
+  font-size: 2em !important;
+  font-weight: 600;
+  margin: 0;
+  line-height: 0.2;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 {
+  font-size: 2.3em !important;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+.Typewriter {
+  font-size: 0.8em !important;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  width: 90%;
+}
+
+/* Roles Modal */
+
+.dimmer-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 1040;
+}
+
+.modal-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.modal-dialog {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.fade .modal-dialog {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+.fade.show .modal-dialog {
+  background: #0e0e14;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.rm-role-btn:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
+
+.modal-content button {
+  background: #84e7da;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modal-content button:hover {
+  background: #a5d6d0;
+}
+
+/* pop  up Av Wr */
+/* CSS (ex: dans Draft.css ou un global.css) */
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop {
+  display: inline-block;
+  animation: pop 0.3s ease-in-out;
+}
+
+.swap-buttons-section {
+  display: none;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 75px;
+  width: 85%;
+  height: auto;
+  margin: auto;
+}
+.about-container h2 {
+  display: flex;
+  align-items: flex-start;
+  font-size: 2.6em !important;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-container p {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+.data-span {
+  position: relative;
+  display: inline-block;
+}
+.data-span span {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.6em !important;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.socials-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+.socials-section img {
+  height: 45px;
+}
+.social-links {
+  display: flex;
+  padding-top: 25px;
+  gap: 15px;
+}
+/* Responsive Design */
+
+@media (max-width: 1300px) {
+  .champions-pannel {
+    width: 80%;
+  }
+  .draft-container {
+    width: 45%;
+  }
+  .swap-buttons-section button {
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    background: transparent;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    width: 30%;
+    min-width: 230px;
+    border-radius: 25px;
+    font-size: 1.6em;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .swap-buttons-section button:hover {
+    background-color: aliceblue;
+    color: #0e0e14;
+  }
+  .swap-buttons-section button.active {
+    background-color: rgb(174, 193, 209);
+    color: #0e0e14;
+  }
+  .swap-buttons-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 810px;
+  }
+  .draft-lollike {
+    padding-top: 0px;
+    height: 77vh;
+  }
+  .champions-icon-select {
+    width: 17%;
+  }
+  .champions-section {
+    gap: 10px;
+  }
 }

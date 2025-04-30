@@ -8,8 +8,16 @@ import {
 } from "../features/champions/championsSelectors";
 import { selectChampion, switchActiveSide } from "../features/draft/draftSlice";
 import { selectActiveSide } from "../features/draft/draftSelectors";
+import RoleModalBootstrap from "./RoleModal";
 
 const roles = ["top", "jungle", "mid", "adc", "support"];
+const rolesWithIcons = [
+  { name: "top", iconPath: "/src/assets/Top.png" },
+  { name: "jungle", iconPath: "/src/assets/Jungle.png" },
+  { name: "mid", iconPath: "/src/assets/Mid.png" },
+  { name: "adc", iconPath: "/src/assets/Adc.png" },
+  { name: "support", iconPath: "/src/assets/Support.png" },
+];
 
 const ChampionsList = () => {
   const dispatch = useDispatch();
@@ -18,21 +26,23 @@ const ChampionsList = () => {
   const error = useSelector(selectChampionsError);
   const activeSide = useSelector(selectActiveSide);
 
-  const [selectedChampion, setSelectedChampion] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [modalShow, setModalShow] = useState(false);
+  const [pendingChampion, setPendingChampion] = useState(null);
 
   useEffect(() => {
     dispatch(fetchChampions());
   }, [dispatch]);
 
   const handleChampionClick = (champion) => {
-    setSelectedChampion(champion);
+    setPendingChampion(champion);
+    setModalShow(true);
   };
 
   const handleRoleSelect = (role) => {
-    if (selectedChampion) {
-      dispatch(selectChampion({ role, champion: selectedChampion }));
-      setSelectedChampion(null);
+    if (pendingChampion) {
+      dispatch(selectChampion({ role, champion: pendingChampion }));
+      setPendingChampion(null);
     }
   };
 
@@ -50,22 +60,40 @@ const ChampionsList = () => {
   return (
     <div className="champions-pannel">
       <h2>List of Champions</h2>
-      <div className="cl-header">
-        <div>
-          <p>
-            Active Draft: <strong>{activeSide.toUpperCase()}</strong>
-          </p>
-        </div>
-        <button onClick={handleSwitchSide}>
-          Switch to {activeSide === "ally" ? "ENEMY" : "ALLY"} Draft
-        </button>
 
+      <div className="cl-header">
         <input
           type="text"
           placeholder="Search ..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
+        <div className="draft-team-selection">
+          <button
+            className={`btn ${
+              activeSide === "Ally" ? "btn-success" : "btn-secondary"
+            }`}
+            onClick={() => {
+              if (activeSide !== "Ally") dispatch(switchActiveSide());
+            }}
+          >
+            Ally
+          </button>
+          <button
+            className={`btn ${
+              activeSide === "Enemy" ? "btn-success" : "btn-secondary"
+            }`}
+            onClick={() => {
+              if (activeSide !== "Enemy") dispatch(switchActiveSide());
+            }}
+            style={{ marginLeft: "10px" }}
+          >
+            Enemy
+          </button>
+          <p>
+            Selecting for : <span>{activeSide} </span>
+          </p>
+        </div>
       </div>
 
       <div className="champions-section">
@@ -88,16 +116,18 @@ const ChampionsList = () => {
         ))}
       </div>
 
-      {selectedChampion && (
-        <div className="role-selection">
-          <h3>Choose a role for {selectedChampion.name}</h3>
-          {roles.map((role) => (
-            <button key={role} onClick={() => handleRoleSelect(role)}>
-              {role.toUpperCase()}
-            </button>
-          ))}
-        </div>
-      )}
+      <RoleModalBootstrap
+        show={modalShow}
+        onHide={() => {
+          setModalShow(false);
+          setPendingChampion(null);
+        }}
+        roles={rolesWithIcons}
+        onSelect={(role) => {
+          handleRoleSelect(role);
+          setModalShow(false);
+        }}
+      />
     </div>
   );
 };

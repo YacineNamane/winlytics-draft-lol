@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  selectRolesBySide,
   selectAverageWinrate,
   selectWinrates,
 } from "../features/draft/draftSelectors";
@@ -9,6 +8,7 @@ import {
   setWinrates,
   calculateAverageWinrate,
 } from "../features/draft/draftSlice";
+import { motion } from "framer-motion";
 
 const roleLogos = {
   top: "/src/assets/Top.png",
@@ -24,12 +24,38 @@ const Draft = ({ side }) => {
   const winrates = useSelector(selectWinrates);
   const averageWinrate = useSelector(selectAverageWinrate);
 
+  const [animatedWR, setAnimatedWR] = useState(0);
+  const [popEffect, setPopEffect] = useState(false);
+
   useEffect(() => {
     fetch("/src/winrate.json")
       .then((res) => res.json())
       .then((data) => dispatch(setWinrates(data)))
       .catch((err) => console.error("Erreur winrate:", err));
   }, [dispatch]);
+
+  useEffect(() => {
+    if (averageWinrate[side] !== null) {
+      let start = 0;
+      const end = parseFloat(averageWinrate[side]) || 0;
+      const duration = 1000;
+      const stepTime = 10;
+      const steps = duration / stepTime;
+      const increment = (end - start) / steps;
+
+      const interval = setInterval(() => {
+        start += increment;
+        start = parseFloat(start);
+        if (start >= end) {
+          start = end;
+          clearInterval(interval);
+          setPopEffect(true);
+          setTimeout(() => setPopEffect(false), 300);
+        }
+        setAnimatedWR(parseFloat(start.toFixed(2)));
+      }, stepTime);
+    }
+  }, [averageWinrate[side], side]);
 
   const getWinrateForChampion = (championName) => {
     const champ = winrates.find((c) => c.champion === championName);
@@ -42,11 +68,17 @@ const Draft = ({ side }) => {
 
   const renderDraft = () => (
     <div className="draft-section">
-      <h3>{side.toUpperCase()} DRAFT</h3>
+      <h3>{side.toUpperCase()} Draft</h3>
       <div className="five-stack-draft">
         {Object.entries(draft).map(([role, champ]) =>
           champ ? (
-            <div key={`${side}-${role}`} className="draft-section-role">
+            <motion.div
+              key={`${side}-${role}`}
+              className="draft-section-role"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <img
                 src={roleLogos[role]}
                 alt={role}
@@ -56,19 +88,25 @@ const Draft = ({ side }) => {
               <img
                 src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champ.image.full}`}
                 alt={champ.name}
-                style={{ width: "90px", height: "90px" }}
+                style={{ width: "70px", height: "70px" }}
               />
               <p>WR: {getWinrateForChampion(champ.name)}%</p>
-            </div>
+            </motion.div>
           ) : (
-            <div key={`${side}-${role}`} className="draft-role empty">
+            <motion.div
+              key={`${side}-${role}`}
+              className="draft-role empty"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <img
                 src={roleLogos[role]}
                 alt={role}
                 style={{ width: "50px", height: "50px" }}
               />
               <p>Empty</p>
-            </div>
+            </motion.div>
           )
         )}
       </div>
@@ -79,20 +117,36 @@ const Draft = ({ side }) => {
     <div className="draft-container">
       {renderDraft()}
 
-      <div
+      <motion.div
         className={`sim-section ${
           draft && Object.values(draft).filter(Boolean).length === 5
             ? "visible"
             : "hidden-placeholder"
         }`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
       >
-        <button onClick={handleSimulate}>Simulate</button>
+        <button onClick={handleSimulate} className="simulate-btn">
+          Simulate
+        </button>
         {averageWinrate[side] !== null && (
-          <p>
-            {side.toUpperCase()} Avg WR: {averageWinrate[side]}%
-          </p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            {side.toUpperCase()} WR :{" "}
+            <motion.span
+              className={popEffect ? "pop" : ""}
+              animate={{ scale: popEffect ? 1.2 : 1 }}
+              transition={{ type: "spring", stiffness: 200 }}
+            >
+              {animatedWR}%
+            </motion.span>
+          </motion.p>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };
