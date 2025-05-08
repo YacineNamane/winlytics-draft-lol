@@ -3,21 +3,20 @@ import Banner from "../components/Banner";
 import ChampionsList from "../components/ChampionsList";
 import Draft from "../components/Draft";
 
-const MOBILE_BREAKPOINT = 1300; // 💬 Plus clair
+const MOBILE_BREAKPOINT = 1300;
 
 const Sim = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [view, setView] = useState("draft"); // 'draft' ou 'champions'
+  const [view, setView] = useState("draft");
 
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== "undefined") {
-        // 🛡️ Protection (future proof)
         setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
       }
     };
 
-    handleResize(); // Initialisation
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -27,7 +26,6 @@ const Sim = () => {
     <div>
       <Banner />
 
-      {/* Mobile : boutons swap view */}
       <div className="swap-buttons-section">
         <button
           onClick={() => setView("draft")}
@@ -44,7 +42,6 @@ const Sim = () => {
       </div>
 
       <div className="draft-lollike">
-        {/* Desktop : afficher tout */}
         {!isMobile && (
           <>
             <Draft side="ally" />
@@ -53,7 +50,6 @@ const Sim = () => {
           </>
         )}
 
-        {/* Mobile : afficher selon la vue choisie */}
         {isMobile && (
           <>
             {view === "draft" && (

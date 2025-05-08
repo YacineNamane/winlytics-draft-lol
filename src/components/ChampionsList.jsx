@@ -59,7 +59,7 @@ const ChampionsList = () => {
 
   return (
     <div className="champions-pannel">
-      <h2>List of Champions</h2>
+      <h2>Champion Selection </h2>
 
       <div className="cl-header">
         <input

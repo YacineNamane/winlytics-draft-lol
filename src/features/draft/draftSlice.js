@@ -57,6 +57,19 @@ const draftSlice = createSlice({
         );
       });
     },
+    resetSideDraft: (state, action) => {
+      const side = action.payload;
+      if (side === "ally" || side === "enemy") {
+        state[side] = {
+          top: null,
+          jungle: null,
+          mid: null,
+          adc: null,
+          support: null,
+        };
+        state.averageWinrate[side] = null;
+      }
+    },
   },
 });
 
@@ -65,6 +78,7 @@ export const {
   switchActiveSide,
   setWinrates,
   calculateAverageWinrate,
+  resetSideDraft,
 } = draftSlice.actions;
 
 export default draftSlice.reducer;

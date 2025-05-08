@@ -7,6 +7,7 @@ import {
 import {
   setWinrates,
   calculateAverageWinrate,
+  resetSideDraft,
 } from "../features/draft/draftSlice";
 import { motion } from "framer-motion";
 
@@ -66,9 +67,20 @@ const Draft = ({ side }) => {
     dispatch(calculateAverageWinrate());
   };
 
+  const handleReset = () => {
+    if (window.confirm(`Reset ${side} draft?`)) {
+      dispatch(resetSideDraft(side));
+    }
+  };
+
   const renderDraft = () => (
     <div className="draft-section">
-      <h3>{side.toUpperCase()} Draft</h3>
+      <div className="draft-header">
+        <h3>{side.toUpperCase()} Draft</h3>
+        <button onClick={handleReset} className="reset-btn">
+          Reset
+        </button>
+      </div>
       <div className="five-stack-draft">
         {Object.entries(draft).map(([role, champ]) =>
           champ ? (
